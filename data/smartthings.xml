@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Wed May 20 22:09:37 2015 as: nmap -A -p- -oX iotdb/smartthings.xml 10.10.10.50 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oX iotdb/smartthings.xml 10.10.10.50" start="1432177777" startstr="Wed May 20 22:09:37 2015" version="6.47" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1432177778" endtime="1432180005"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.10.10.50" addrtype="ipv4"/>
+<address addr="D0:52:A8:07:10:5F" addrtype="mac" vendor="Physical Graph"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="100"/><service name="telnet" servicefp="SF-Port23-TCP:V=6.47%I=7%D=5/20%Time=555D54E3%P=x86_64-unknown-linux-gnu%r(NULL,D2,&quot;Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20&quot;)%r(GenericLines,D2,&quot;Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20Password:\x20&quot;)%r(GetRequest,A,&quot;Password:\x20&quot;)%r(HTTPOptions,A,&quot;Password:\x20&quot;)%r(RTSPRequest,A,&quot;Password:\x20&quot;)%r(RPCCheck,A,&quot;Password:\x20&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="39500"><state state="open" reason="syn-ack" reason_ttl="100"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="23"/>
+<osmatch name="IBM OS/2 Warp 2.0" accuracy="86" line="32327">
+<osclass type="general purpose" vendor="IBM" osfamily="OS/2" osgen="4.X" accuracy="86"><cpe>cpe:/o:ibm:os2:4</cpe></osclass>
+</osmatch>
+</os>
+<distance value="1"/>
+<tcpsequence index="257" difficulty="Good luck!" values="5A9A65DE,CF11531C,3CA64142,737C1D18,F1923FB4,4B62F5DE"/>
+<ipidsequence class="Incremental" values="1C,1D,1E,20,21,22"/>
+<tcptssequence class="none returned (unsupported)"/>
+<trace>
+<hop ttl="1" ipaddr="10.10.10.50" rtt="0.15"/>
+</trace>
+<times srtt="148" rttvar="9" to="100000"/>
+</host>
+<runstats><finished time="1432180005" timestr="Wed May 20 22:46:45 2015" elapsed="2228.08" summary="Nmap done at Wed May 20 22:46:45 2015; 1 IP address (1 host up) scanned in 2228.08 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

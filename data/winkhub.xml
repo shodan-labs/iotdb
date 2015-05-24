@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Fri Feb 20 07:12:07 2015 as: nmap -A -p- -oX iotdb/winkhub.xml 192.168.1.60 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oX iotdb/winkhub.xml 192.168.1.60" start="1424437927" startstr="Fri Feb 20 07:12:07 2015" version="6.47" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1424437927" endtime="1424447100"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.60" addrtype="ipv4"/>
+<address addr="B4:79:A7:1A:7D:9E" addrtype="mac" vendor="Samsung Electro Mechanics co."/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65534">
+<extrareasons reason="resets" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="lighttpd" version="1.4.35" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-methods" output="No Allow or Public header in OPTIONS response (status code 404)"/><script id="http-title" output="Site doesn&apos;t have a title (application/json)."></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30807"/>
+<osmatch name="Linux 2.6.16 - 2.6.35 (embedded)" accuracy="100" line="39988">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="114803" lastboot="Thu Feb 19 01:51:37 2015"/>
+<distance value="1"/>
+<tcpsequence index="194" difficulty="Good luck!" values="D73C3C82,D7A71E7C,D74D9CA9,D7C80AEB,D7356C1C,D7DF2D8B"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="AF2AD5,AF2ADF,AF2AEA,AF2AF4,AF2AFE,AF2B08"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.1.60" rtt="2.58"/>
+</trace>
+<times srtt="2584" rttvar="1532" to="100000"/>
+</host>
+<runstats><finished time="1424447100" timestr="Fri Feb 20 09:45:00 2015" elapsed="9174.03" summary="Nmap done at Fri Feb 20 09:45:00 2015; 1 IP address (1 host up) scanned in 9174.03 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

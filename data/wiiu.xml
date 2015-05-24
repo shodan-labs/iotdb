@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/local/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Fri Feb 13 22:54:26 2015 as: nmap -A -p- -oA iotdb/wiiu.xml -T5 192.168.1.56 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -oA iotdb/wiiu.xml -T5 192.168.1.56" start="1423889666" startstr="Fri Feb 13 22:54:26 2015" version="6.47" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="SYN Stealth Scan" time="1423889790" percent="13.28" remaining="803" etc="1423890593"/>
+<taskprogress task="SYN Stealth Scan" time="1423889835" percent="18.18" remaining="757" etc="1423890591"/>
+<taskprogress task="SYN Stealth Scan" time="1423889955" percent="31.19" remaining="636" etc="1423890590"/>
+<taskprogress task="SYN Stealth Scan" time="1423890143" percent="51.65" remaining="446" etc="1423890589"/>
+<taskprogress task="SYN Stealth Scan" time="1423890245" percent="62.70" remaining="344" etc="1423890589"/>
+<taskprogress task="SYN Stealth Scan" time="1423890411" percent="80.73" remaining="178" etc="1423890589"/>
+<taskprogress task="SYN Stealth Scan" time="1423890499" percent="90.29" remaining="90" etc="1423890588"/>
+<taskprogress task="SYN Stealth Scan" time="1423890512" percent="91.71" remaining="77" etc="1423890588"/>
+<taskprogress task="SYN Stealth Scan" time="1423890537" percent="94.48" remaining="51" etc="1423890588"/>
+<host starttime="1423889666" endtime="1423890567"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.1.56" addrtype="ipv4"/>
+<address addr="9C:E6:35:30:24:C5" addrtype="mac" vendor="Nintendo Co."/>
+<hostnames>
+</hostnames>
+</host>
+<runstats><finished time="1423890567" timestr="Fri Feb 13 23:09:27 2015" elapsed="900.53" summary="Nmap done at Fri Feb 13 23:09:27 2015; 1 IP address (1 host up) scanned in 900.53 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
